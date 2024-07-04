@@ -47,10 +47,10 @@ export default function Textform(props) {
     </div>
     <div className="container my-3" style={{color:props.mode==="dark"?"white":"black"}}>
       <h1>Your text Summary</h1>
-      {/* <p>{text.split(' ').length} word and {text.length} character</p> 
+      <p>{text.split(' ').length} word and {text.length} character</p> 
       <p>{0.008 * text.split(' ').length} Minutes Read</p> 
       <h2>Preview</h2>
-      <p>{text.length>0?text:"Enter something in above textarea"} </p> */}
+      <p>{text.length>0?text:"Enter something in above textarea"} </p>
     </div>
     </>
   )
