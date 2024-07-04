@@ -29,9 +29,9 @@ export default function Textform(props) {
     const handlespaceclick=()=>
       {
         let newText=text.split(/[ ]+/);
-        setText(newText.join[" "])
+        setText(newText.join(" "))
       }
-  const [text,setText]= useState();
+  const [text,setText]= useState("");
   return (
     <>
     <div className="container" style={{color:props.mode==="dark"?"white":"black"}}>
@@ -47,8 +47,8 @@ export default function Textform(props) {
     </div>
     <div className="container my-3" style={{color:props.mode==="dark"?"white":"black"}}>
       <h1>Your text Summary</h1>
-      <p>{text.split(' ').length} word and {text.length} character</p> 
-      <p>{0.008 * text.split(' ').length} Minutes Read</p> 
+      <p>{text.split(/\s+/).filter((element) => element.length !== 0).length} words and {text.length} characters</p> {/* <- Changed */}
+      <p>{0.008 * text.split(/\s+/).filter((element) => element.length !== 0).length} Minutes Read</p> {/* <- Changed */}
       <h2>Preview</h2>
       <p>{text.length>0?text:"Enter something in above textarea"} </p>
     </div>
