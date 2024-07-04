@@ -50,10 +50,10 @@ export default function Textform(props) {
       <p>{text.split(/\s+/).filter((element) => element.length !== 0).length} words and {text.length} characters</p> {/* <- Changed */}
       <p>{0.008 * text.split(/\s+/).filter((element) => element.length !== 0).length} Minutes Read</p> {/* <- Changed */}
       <h2>Preview</h2>
-      <p>{text.length>0?text:"Enter something in above textarea"} </p>
+      <p>{text.length>0?text:"Enter something in above textarea"}</p>
     </div>
     </>
-  )
+  ) 
 }
 
 
