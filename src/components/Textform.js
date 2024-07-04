@@ -46,11 +46,11 @@ export default function Textform(props) {
     <button className="btn btn-primary mt-4 mx-2 p-2" onClick={handlespaceclick}>Remove space</button>
     </div>
     <div className="container my-3" style={{color:props.mode==="dark"?"white":"black"}}>
-      <h1>Your text Summary</h1>
-      <p>{text.split(/\s+/).filter((element) => element.length !== 0).length} words and {text.length} characters</p> {/* <- Changed */}
-      <p>{0.008 * text.split(/\s+/).filter((element) => element.length !== 0).length} Minutes Read</p> {/* <- Changed */}
-      <h2>Preview</h2>
-      <p>{text.length>0?text:"Enter something in above textarea"}</p>
+      // <h1>Your text Summary</h1>
+      // <p>{text.split(/\s+/).filter((element) => element.length !== 0).length} words and {text.length} characters</p> {/* <- Changed */}
+      // <p>{0.008 * text.split(/\s+/).filter((element) => element.length !== 0).length} Minutes Read</p> {/* <- Changed */}
+      // <h2>Preview</h2>
+      // <p>{text.length>0?text:"Enter something in above textarea"}</p>
     </div>
     </>
   ) 
